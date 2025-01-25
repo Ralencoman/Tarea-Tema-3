@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ágora Estudio de Arquitectura</title>
+    <style>
+        * {box-sizing: border-box;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;}
+        nav {
+            background-color: brown;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover { 
+            color: yellow;
+        }
+        header {
+            background-image: url(Images/dibujo_tecnico.jpg);
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+        }
+        #caja-central {
+            text-align: center;
+        }
+        header h1 {
+            color: rgb(202, 71, 20);
+            text-shadow: 3px 3px 5px black;
+            font-size: 3em;
+        }
+        #contenedor-quienes {
+            display: flex;
+        }
+        #contenedor-quienes #izqu { width: 50%; }
+        #contenedor-quienes #der { width: 50%; text-align: center;}
+        #contenedor-quienes #der img {width: 80%;}
+        .titulo {
+            color: brown;
+            text-align: center;
+        }
+        section#quienes-somos {
+            padding: 20px;
+        }
+        section#obras {
+            padding: 20px;
+            background-color: antiquewhite;
+         }
+        #contenedor-obras {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .obra {
+            width: 30%;
+            text-align: center;
+        }
+        .obra img {
+            width: 90%;
+        }
+        footer {
+            background-color: rgb(147, 93, 184);
+            color: beige;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        footer #caja-superior {
+            width: 100%;
+            text-align: center;
+            border-bottom: 2px solid white;
+            padding: 10px;
+        }
+        footer .caja-inferior {
+            width: 33%;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Quienes Somos</a>
+        <a href="#">Obras</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <header>
+        <div id="caja-central">
+            <h1>Ágora</h1>
+            <h2>Estudio de Arquitectura</h2>
+    </div>
+    </header>
+    <section id="quienes-somos">
+        <h1 class="titulo">
+            Quienes somos
+        </h1>
+        <div id="contenedor-quienes">
+            <div id="izqu">
+                <h1>Un equipo multidisciplinar y profesional</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, deserunt sint a veniam, earum omnis quam ex consequuntur officiis quidem minus possimus ea error, fuga corrupti vel porro. Iusto, consequatur?</p>
+            </div>
+            <div id="der">
+                <img src="Images/arquitectos.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="obras">
+        <h1 class="titulo">
+            Obras
+        </h1>
+        <div id="contenedor-obras">
+            <div class="obra">
+                <img src="Images/casa.jpg" alt="">
+                <P>Sevilla</P>
+            </div>
+            <div class="obra">
+                <img src="Images/casa.jpg" alt="">
+                <P>Madrid</P>
+            </div>
+            <div class="obra">
+                <img src="Images/casa.jpg" alt="">
+                <P>Barcelona</P>
+            </div>
+            <div class="obra">
+                <img src="Images/casa.jpg" alt="">
+                <P>ASturias</P>
+            </div>
+            <div class="obra">
+                <img src="Images/casa.jpg" alt="">
+                <P>Cádiz</P>
+            </div>
+            <div class="obra">
+                <img src="Images/casa.jpg" alt="">
+                <P>Valencia</P>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p id="caja-superior">Contacte con nosotros. Trabajamos los 365 días del año</p>
+        <div class="caja-inferior">
+            <h2>Enlaces</h2>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="caja-inferior">
+            <h2>Estamos en</h2>
+            <p>Avda.Los Institutos</p>
+            <p>13600 Alcázar de San Juan</p>
+        </div>
+        <div class="caja-inferior">
+            <h2>Gmail</h2>
+            <p>agora@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>

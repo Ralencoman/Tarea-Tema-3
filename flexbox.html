@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style type="text/css">
+        section {
+            display: flex;
+            background-color: lightskyblue;
+            border:2px solid blue;
+            height: 200px;
+            justify-content: flex start;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: flex-end;
+                }
+        article {
+            border: 2px solid greenyellow;
+            background-color: fuchsia;
+            padding: 20px;
+            width: 50%;
+                }
+        #art11 {align-self: flex-end;}
+        #art12 {align-self: center;}
+        #art13 {align-self: flex-start;}
+    </style>
+
+</head>
+<body>
+<section>
+    <article id="art11">
+        Artículo 1.1
+    </article>
+    <article id="art12">
+        Artículo 1.2
+    </article>
+    <article id="art13">
+        Artículo 1.3
+    </article>
+</section>
+</body>
+</html>
